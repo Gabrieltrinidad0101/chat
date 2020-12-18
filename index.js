@@ -12,7 +12,7 @@ const server = app.listen(app.get("port"),()=>{
 });
 
 const io = socketIO.listen(server)
- 
+
 
 io.on("connection",(socket)=>{
     console.log("new connection")
